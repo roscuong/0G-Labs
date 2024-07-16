@@ -17,6 +17,12 @@ sudo apt install curl git wget htop tmux build-essential jq make lz4 gcc unzip -
 ```bash
 git clone https://github.com/0glabs/0g-da-node.git
 ```
+### Install Rust & Check Version
+```bash
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+source $HOME/.cargo/env
+rustc --version
+```
 ### lib install
 ```bash
 sudo apt-get update
