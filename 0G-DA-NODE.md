@@ -49,6 +49,8 @@ cd 0g-da-node
 ```bash
 cargo run --bin key-gen
 ```
+<change input>
+DONT FORGET TO COPY YOUR BLS KEY!!!
 ### config.toml set
 ```bash
 mv /root/0g-da-node/config_example.toml /root/0g-da-node/config.toml
