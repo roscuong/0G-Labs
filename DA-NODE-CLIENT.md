@@ -48,7 +48,7 @@ nano Makefile
 Find run_combined then follow edit below
 --chain.rpc https://rpc-testnet.0g.ai \
 --chain.private-key <Your_private_key> \
---combined-server.storage.node-url http://0..0.0.0:5678 \ #if you have url storage node
+--combined-server.storage.node-url http://0..0.0.0:5678 \ if you have url storage node
 --combined-server.storage.flow-contract 0x8873cc79c5b3b5666535C825205C9a128B1D75F1 \
 
 ### Run
