@@ -24,6 +24,9 @@ sudo apt install libssl-dev
 ```bash
 sudo apt install pkg-config
 ```
+```bash
+sudo apt-get install protobuf-compiler
+```
 ### build
 ```bash
 cd && cd 0g-da-node
