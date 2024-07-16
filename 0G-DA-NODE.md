@@ -19,11 +19,24 @@ git clone https://github.com/0glabs/0g-da-node.git
 ```
 ### lib install
 ```bash
+sudo apt-get update
+```
+```bash
 sudo apt install libssl-dev
 ```
 ```bash
 sudo apt install pkg-config
 ```
+```bash
+sudo apt-get install protobuf-compiler
+```
+```bash
+sudo apt-get install clang
+```
+```bash
+sudo apt-get install llvm llvm-dev
+```
+
 ### build
 ```bash
 cd && cd 0g-da-node
