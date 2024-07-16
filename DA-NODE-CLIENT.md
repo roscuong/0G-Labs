@@ -37,7 +37,8 @@ make build
 ### Run combined server
 
 <change input>
-Config run_combined
+ 
+Config `run_combined`
 
 ```bash
 cd ~/0g-da-client/disperser
