@@ -12,6 +12,11 @@
 ```bash
 sudo systemctl stop zgs
 ```
+### Then Backup Your File Config.toml
+
+<change input>
+DO THAT FOR STEP 4
+ 
 ### Git Download
 ```bash
 cd $HOME
