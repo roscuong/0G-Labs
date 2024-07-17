@@ -42,7 +42,7 @@ Its has to be in v0.3.4
 nano $HOME/0g-storage-node/run/config.toml
 ```
 <change input>
-Its the same as the previous file `config.toml` IN V0.3.3
+Its the same as the previous file config.toml  in v0.3.3
  
 ### Restart Your Node
 ```bash
