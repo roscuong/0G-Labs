@@ -13,9 +13,9 @@
 sudo systemctl stop zgs
 ```
 ### Then Backup Your File Config.toml
-
-- DO THAT FOR STEP 4 
- 
+```bash
+cp $HOME/0g-storage-node/run/config.toml $HOME/0g-storage-node/run/config.toml.backup
+```
 ### 1. Git Download
 ```bash
 cd $HOME
@@ -41,12 +41,12 @@ $HOME/0g-storage-node/target/release/zgs_node --version
 <change input>
 Its has to be in v0.3.4
 
-### 4. Check Your Config.toml
+### 4. Move Config.toml Back
 ```bash
-nano $HOME/0g-storage-node/run/config.toml
+mv $HOME/0g-storage-node/run/config.toml.backup $HOME//0g-storage-node/run/config.toml
 ```
--- Paste your backup Config.toml \
--- Its the same as the previous file config.toml  in v0.3.3 \
+- Its the same as the previous file config.toml in v0.3.3 
+- No changes are required in config.toml compared to v0.3.3
  
 ### Restart Your Node
 ```bash
