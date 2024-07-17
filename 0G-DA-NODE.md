@@ -76,14 +76,14 @@ DONT FORGET TO COPY YOUR BLS KEY!!!
 mv /root/0g-da-node/config_example.toml /root/0g-da-node/config.toml
 sudo nano /root/0g-da-node/config.toml
 ```
-<change input>
-grpc_listen_address = "0.0.0.0:34000"
-eth_rpc_endpoint = "http://Validator rpc ip:8545"
-socket_address = "your node ip:34000"
-da_entrance_address = "0xDFC8B84e3C98e8b550c7FEF00BCB2d8742d80a69"
-start_block_number = 802
-signer_bls_private_key = "Bls key gen paste"
-signer_eth_private_key = "validator eth private key"
+
+- grpc_listen_address = "0.0.0.0:34000" 
+- eth_rpc_endpoint = "http://Validator rpc ip:8545" 
+- socket_address = "your node ip:34000" 
+- da_entrance_address = "0xDFC8B84e3C98e8b550c7FEF00BCB2d8742d80a69" 
+- start_block_number = 802 
+- signer_bls_private_key = "Bls key gen paste" 
+- signer_eth_private_key = "validator eth private key"
 
 ### Systemd create
 ```bash
