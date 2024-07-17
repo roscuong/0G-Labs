@@ -14,10 +14,9 @@ sudo systemctl stop zgs
 ```
 ### Then Backup Your File Config.toml
 
-<change input>
-DO THAT FOR STEP 4
+- DO THAT FOR STEP 4 
  
-### Git Download
+### 1. Git Download
 ```bash
 cd $HOME
 rm -rf /root/0g-storage-node
@@ -30,24 +29,24 @@ git checkout 5b6a4c716174b4af1635bfe903cd4f82894e0533
 git submodule update --init
 sudo apt install cargo
 ```
-### Then Build It
+### 2. Then Build It
 ```bash
 cargo build --release
 ```
 
-### Check Your Version After Git Download
+### 3. Check Your Version After Git Download
 ```bash
 $HOME/0g-storage-node/target/release/zgs_node --version
 ```
 <change input>
 Its has to be in v0.3.4
 
-### Check Your Config.toml
+### 4. Check Your Config.toml
 ```bash
 nano $HOME/0g-storage-node/run/config.toml
 ```
-<change input>
-Its the same as the previous file config.toml  in v0.3.3
+-- Paste your backup Config.toml \
+-- Its the same as the previous file config.toml  in v0.3.3 \
  
 ### Restart Your Node
 ```bash
