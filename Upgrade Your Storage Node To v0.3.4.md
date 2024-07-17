@@ -14,7 +14,7 @@ sudo systemctl stop zgs
 ```
 ### Then Backup Your File Config.toml
 ```bash
-cp $HOME/0g-storage-node/run/config.toml $HOME/0g-storage-node/run/config.toml.backup
+cp $HOME/0g-storage-node/run/config.toml $HOME/config.toml.backup
 ```
 ### 1. Git Download
 ```bash
@@ -43,7 +43,7 @@ Its has to be in v0.3.4
 
 ### 4. Move Config.toml Back
 ```bash
-mv $HOME/0g-storage-node/run/config.toml.backup $HOME//0g-storage-node/run/config.toml
+mv $HOME/config.toml.backup $HOME//0g-storage-node/run/config.toml
 ```
 - Its the same as the previous file config.toml in v0.3.3 
 - No changes are required in config.toml compared to v0.3.3
