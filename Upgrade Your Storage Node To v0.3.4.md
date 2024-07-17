@@ -35,14 +35,14 @@ cargo build --release
 $HOME/0g-storage-node/target/release/zgs_node --version
 ```
 <change input>
-IT HAVE TO IN V0.3.4
+Its has to be in v0.3.4
 
 ### Check Your Config.toml
 ```bash
 nano $HOME/0g-storage-node/run/config.toml
 ```
 <change input>
-ITS THE SAME AS PREVIOUS `CONFIG.TOML` IN V0.3.3
+Its the same as the previous file 'CONFIG.TOML' IN V0.3.3
  
 ### Restart Your Node
 ```bash
@@ -50,7 +50,8 @@ sudo systemctl restart zgs
 ```
 
 ### Check Your Log
-```tail -f ~/0g-storage-node/run/log/zgs.log.$(TZ=UTC date +%Y-%m-%d)
+```bash
+tail -f ~/0g-storage-node/run/log/zgs.log.$(TZ=UTC date +%Y-%m-%d)
 ```
 ### Check Peers Connected
 ```bash
