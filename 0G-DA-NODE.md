@@ -45,7 +45,11 @@ sudo apt-get install llvm llvm-dev
 
 ### build
 ```bash
-cd && cd 0g-da-node
+cd $HOME/0g-da-node
+git stash
+git fetch --all --tags
+git checkout 31060b7 
+git submodule update --init
 ```
 ```bash
 cargo build --release
@@ -76,6 +80,7 @@ DONT FORGET TO COPY YOUR BLS KEY!!!
 mv /root/0g-da-node/config_example.toml /root/0g-da-node/config.toml
 sudo nano /root/0g-da-node/config.toml
 ```
+![image](https://github.com/user-attachments/assets/56e587af-f62e-4a8d-bb5b-3ff879888bc5)
 
 - grpc_listen_address = "0.0.0.0:34000" 
 - eth_rpc_endpoint = "http://Validator rpc ip:8545" 
@@ -84,6 +89,7 @@ sudo nano /root/0g-da-node/config.toml
 - start_block_number = 802 
 - signer_bls_private_key = "Bls key gen paste" 
 - signer_eth_private_key = "validator eth private key"
+- Miner Private Keys = could be the same as `signer_eth_private_key`, but not recommended
 
 ### Systemd create
 ```bash
