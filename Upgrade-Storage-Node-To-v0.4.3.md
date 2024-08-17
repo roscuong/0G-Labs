@@ -14,20 +14,14 @@ sudo systemctl stop zgs
 ```
 ### Then Backup Your File Config.toml
 ```bash
-cp $HOME/0g-storage-node/run/config.toml $HOME/config.toml.backup
+mv /root/0g-storage-node/run/config-testnet-turbo.toml /root/config-testnet-turbo_backup.toml
 ```
 ### 1. Git Download
 ```bash
-cd $HOME
-rm -rf /root/0g-storage-node
-git clone https://github.com/0glabs/0g-storage-node.git
-cd $HOME/0g-storage-node
-git stash
+cd /root/0g-storage-node
 git fetch --all --tags
-git tag -d v0.3.4
-git checkout 5b6a4c716174b4af1635bfe903cd4f82894e0533
+git checkout v0.4.3
 git submodule update --init
-sudo apt install cargo
 ```
 ### 2. Then Build It
 ```bash
@@ -43,10 +37,10 @@ Its has to be in v0.3.4
 
 ### 4. Move Config.toml Back
 ```bash
-mv $HOME/config.toml.backup $HOME/0g-storage-node/run/config.toml
+mv /root/config-testnet-turbo_backup.toml /root/0g-storage-node/run/config-testnet-turbo.toml
 ```
-- Its the same as the previous file config.toml in v0.3.3 
-- No changes are required in config.toml compared to v0.3.3
+- Its the same as the previous file config.toml  
+- No changes are required in config.toml compared 
  
 ### Restart Your Node
 ```bash
