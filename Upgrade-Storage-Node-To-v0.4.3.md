@@ -1,4 +1,4 @@
-# Upgrade Your Storage Node v0.3.3 to v0.3.4
+# Upgrade Your Storage Node v0.3.3 to v0.4.3
 
 ## System Requirements
 | Category | Requirements |
