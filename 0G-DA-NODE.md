@@ -45,11 +45,9 @@ sudo apt-get install llvm llvm-dev
 
 ### build
 ```bash
-cd $HOME/0g-da-node
-git stash
-git fetch --all --tags
-git checkout 31060b7 
-git submodule update --init
+git clone https://github.com/0glabs/0g-da-node.git
+cd 0g-da-node
+git checkout tags/v1.0.2 -b v1.0.2
 ```
 ```bash
 cargo build --release
