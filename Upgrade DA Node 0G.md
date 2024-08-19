@@ -31,7 +31,6 @@ rm -rf $HOME/0g-da-node/config.toml && mv $HOME/0g-da-node/config_example.toml $
 
 - Miner Private Keys = `could be the same as signer_eth_private_key, but not recommended`
 
-![image](https://github.com/user-attachments/assets/56e587af-f62e-4a8d-bb5b-3ff879888bc5)
 
 ### Systemd create
 ```bash
