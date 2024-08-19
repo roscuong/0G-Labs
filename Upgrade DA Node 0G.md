@@ -13,11 +13,14 @@ sudo systemctl stop da
 ```
 ### Update
 ```bash
-git clone https://github.com/0glabs/0g-da-node.git
-cd 0g-da-node
-git checkout tags/v1.0.2 -b v1.0.2
+git clone -b v1.0.2 https://github.com/0glabs/0g-da-node.git
 ```
 ```bash
+cd $HOME/0g-da-node
+git stash
+git fetch --all --tags
+git checkout 31060b7 
+git submodule update --init
 cargo build --release
 ```
 
