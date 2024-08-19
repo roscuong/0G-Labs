@@ -33,7 +33,7 @@ cargo build --release
 $HOME/0g-storage-node/target/release/zgs_node --version
 ```
 <change input>
-Its has to be in v0.3.4
+Its has to be in v0.4.3
 
 ### 4. Move Config.toml Back
 ```bash
