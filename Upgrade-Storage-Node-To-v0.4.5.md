@@ -1,4 +1,4 @@
-# Upgrade Your Storage Node v0.3.3 to v0.4.3
+# Upgrade Your Storage Node to v0.4.5
 
 ## System Requirements
 | Category | Requirements |
@@ -18,9 +18,10 @@ mv /root/0g-storage-node/run/config-testnet-turbo.toml /root/config-testnet-turb
 ```
 ### 1. Git Download
 ```bash
-cd /root/0g-storage-node
+cd $HOME/0g-storage-node
+git stash
 git fetch --all --tags
-git checkout v0.4.4
+git checkout 6cf05d2d50e7e84a631c858cf38d97430030c830 
 git submodule update --init
 ```
 ### 2. Then Build It
