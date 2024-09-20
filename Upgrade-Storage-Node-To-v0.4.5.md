@@ -14,7 +14,7 @@ sudo systemctl stop zgs
 ```
 ### Then Backup Your File Config.toml
 ```bash
-mv /root/0g-storage-node/run/config-testnet.toml /root/config-testnet_backup.toml
+mv /root/0g-storage-node/run/config-testnet-turbo.toml /root/config-testnet-tubor_backup.toml
 ```
 ### 1. Git Download
 ```bash
