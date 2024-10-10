@@ -21,7 +21,7 @@ mv /root/0g-storage-node/run/config-testnet-turbo.toml /root/config-testnet-turb
 cd $HOME/0g-storage-node
 git stash
 git fetch --all --tags
-git checkout 6cf05d2d50e7e84a631c858cf38d97430030c830 
+git checkout ff1985121a9a65fd61677254ff16fd9069181807 
 git submodule update --init
 ```
 ### 2. Then Build It
@@ -35,6 +35,12 @@ $HOME/0g-storage-node/target/release/zgs_node --version
 ```
 <change input>
 Its has to be in v0.4.5
+
+# Another way to check version
+
+```bash
+git log -1
+```
 
 ### 4. Move Config.toml Back
 ```bash
