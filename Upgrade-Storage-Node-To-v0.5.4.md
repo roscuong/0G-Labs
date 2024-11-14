@@ -20,7 +20,7 @@ mv /root/0g-storage-node/run/config-testnet-turbo.toml /root/config-testnet-turb
 ```bash
 cd $HOME/0g-storage-node
 git fetch --all --tags
-git checkout v0.6.0
+git checkout v0.7.3
 git submodule update --init
 ```
 ### 2. Then Build It
