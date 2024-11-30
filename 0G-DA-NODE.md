@@ -112,6 +112,7 @@ EOF
 ```bash
 sudo systemctl daemon-reload && \
 sudo systemctl enable da && \
+sudo systemctl restart da && \
 sudo systemctl start da
 ```
 ### System log
